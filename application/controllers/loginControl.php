@@ -1,15 +1,16 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
  
-class Login extends CI_Controller
+class LoginControl extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
 		//$this->load->model('login_model');
 		$this->load->library(array('session','form_validation'));
-		$this->load->helper(array('url','form'));
-    }
+		$this->load->helper('url');
+		$this->load->helper('form');    
+	}
 	
 	public function index()
 	{	
@@ -18,10 +19,7 @@ class Login extends CI_Controller
 			case '':
 				$data['token'] = $this->token();
 				$data['titulo'] = 'Login con roles de usuario en codeigniter';
-				
-				$this->load->view('login',$data);
-				
-				
+				$this->load->view('loginView',$data);
 				break;
 			case 'Administrador':
 				redirect(base_url().'welcome');
@@ -35,13 +33,13 @@ class Login extends CI_Controller
 			default:		
 				$data['titulo'] = 'Login con roles de usuario en codeigniter';
 
-				$this->load->view('login',$data);
+				$this->load->view('loginView',$data);
 
 				break;		
 		}
 	}
  
-public function new_user()
+	public function new_user()
 	{
 		if($this->input->post('token') && $this->input->post('token') == $this->session->userdata('token'))
 		{
@@ -76,12 +74,12 @@ public function new_user()
 					}
 				}else
 				{
-					redirect(base_url().'login');
+					redirect(base_url().'loginView');
 				}
 				
 			}
 		}else{
-			redirect(base_url().'login');
+			redirect(base_url().'loginView');
 		}
 	}
 	
@@ -95,7 +93,7 @@ public function new_user()
 	public function logout_ci()
 	{
 		$this->session->sess_destroy();
-		redirect(base_url().'login');
+		redirect(base_url().'loginView');
 		//$this->index();
 	}
 }
