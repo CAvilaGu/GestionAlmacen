@@ -134,6 +134,9 @@
 								<i class="fa fa-comments fa-fw"></i>
 								Lote x Producto
 							</div>
+							<li>1</li>
+							<li>2</li>
+							
 						</div>
 					</div>
 
@@ -143,10 +146,14 @@
 								<i class="fa fa-comments fa-fw"></i>
 								Bulto x Producto
 							</div>
+							<li>3</li>
+							<li>4</li>
 						</div>
 					</div>
 				</div>
 				</fieldset>
+				<button type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;">  Atras  </button>
+				<button type="submit" class="btn btn-success col-md-1">Procesar</button>
 			</form>
   		</div>
 	</div>

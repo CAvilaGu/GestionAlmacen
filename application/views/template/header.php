@@ -16,6 +16,19 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styleSheet.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- /////////////////////////////////////////////// -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+   
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+     <!-- TABLE STYLES-->
+    <link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+<!-- /////////////////////////////////////////////// -->
 
 
     <title>Sistema de Gestión de Almacén</title>
@@ -28,11 +41,11 @@
             </div>
 
             <div style="background-color:gree; color: white; padding: 35px 50px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 
-                <a href="" class="btn btn-success ">Salir</a> 
+                <a href="" class="btn btn-success btn-md btn-block ">Salir</a> 
             </div>
 
             <div style="background-color:gree; color: white; padding: 35px 5px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 
-                    <a href="" class="btn btn-success ">Perfil</a> 
+                    <a href="" class="btn btn-success btn-md btn-block ">Perfil</a> 
             </div>
         </nav>  
     </div> 

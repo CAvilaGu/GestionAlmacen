@@ -1,9 +1,9 @@
-<!-- AGREGAR PROVEEDOR -->
+<!-- Agregar cliente -->
 <div id="page-wrapper" >
     <div id="page-inner">
         <div class="row">
-            <div class="col-md-112">
-             	<h1>Nuevo Proveedor</h1>   
+            <div class="col-md-12">
+             	<h1>Nuevo Cliente</h1>   
             </div>
         </div>
          <!-- Area de trabajo -->
@@ -11,31 +11,25 @@
 			<form class="form-horizontal">
 				<fieldset>
 					<!-- Form Name -->
-					<legend>Detalle Proveedor</legend>
+					<legend>Detalle Cliente</legend>
 					<!-- Formulario -->
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">Código</label>  
-					  		<div class="col-md-5">
-					  			<input id="nroguia" name="nroguia" placeholder="Código del Proveedor " class="form-control input-md" type="text">
+					  		<label class="col-md-3 control-label" for="nroguia">Código</label> 
+					  		<div class="col-md-2">
+					  			<select class="form-control">
+					  				<option value="V">V</option>
+						      		<option value="J">J</option>
+					  			</select> 
+					  		</div>
+					  		<div class="col-md-3">
+					  			<input id="nroguia" name="nroguia" placeholder="Código del Cliente " class="form-control input-md" type="text">
 					  		</div>
 						</div>
 						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">RIF</label>  
-					  		<div class="col-md-5">
-					  			<input id="nroguia" name="nroguia" placeholder="RIF del Proveedor " class="form-control input-md" type="text">
-					  		</div>
-						</div>
-						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">Nombre Comercial</label>  
+					  		<label class="col-md-3 control-label" for="nroguia">Nombre</label>  
 					  		<div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Nombre Comercial del Proveedor" class="form-control input-md" type="text">
-					  		</div>
-						</div>
-						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">Nombe Fiscal</label>  
-					  		<div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Nombre Fiscal del Proveedor" class="form-control input-md" type="text">
+					  			<input id="nroguia" name="nroguia" placeholder="Nombre Comercial del Cliente" class="form-control input-md" type="text">
 					  		</div>
 						</div>
 						<div class="form-group">

@@ -2,12 +2,12 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-             <h2>Bienvenido</h2>  
-             </hr> 
-            </div>
+             <h1>Bienvenido</h1> 
+            
+            <div class="container col-md-1"> 
+            	<img style="height: 350px; width: 850px;"src="assets/images/logo.png"/>
+        	</div>
         </div>
-        <div> 
-        	<img style="height: 400px; width: 950px;"src="assets/images/logo.png"/>
-    	</div>
+    </div>
     </div>
 </div>
