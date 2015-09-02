@@ -17,13 +17,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- /////////////////////////////////////////////// -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
      <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet"  type="text/css"/>
      <!-- MORRIS CHART STYLES-->
    
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
      <!-- TABLE STYLES-->
@@ -36,7 +36,7 @@
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0px; background-color: #DCDCDC;  border-bottom: black 2px solid;">
-            <div style="background-color:gree; color: white; padding: 15px 50px 5px 0px; float: left;"> 
+            <div style="background-color:gree; color: white; padding: 2px 50px 2px 5px; float: left;"> 
                 <img src="assets/images/logo.png" class="img-responsive" style="height: 80px; width: 250px;"/>
             </div>
 
