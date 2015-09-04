@@ -1,9 +1,9 @@
-<!-- Agregar cliente -->
+<!-- Agregar Producto -->
 <div id="page-wrapper" >
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-             	<h1>Nuevo Cliente</h1>   
+             	<h1>Nuevo Producto</h1>   
             </div>
         </div>
          <!-- Area de trabajo -->
@@ -11,7 +11,7 @@
 			<form class="form-horizontal">
 				<fieldset>
 					<!-- Form Name -->
-					<legend>Detalle Cliente</legend>
+					<legend>Detalle Producto</legend>
 					<!-- Formulario -->
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="form-group">
@@ -23,13 +23,13 @@
 					  			</select> 
 					  		</div>
 					  		<div class="col-md-3">
-					  			<input id="nroguia" name="nroguia" placeholder="Código del Cliente " class="form-control input-md" type="text">
+					  			<input id="nroguia" name="nroguia" placeholder="Código del Producto " class="form-control input-md" type="text">
 					  		</div>
 						</div>
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Nombre</label>  
 					  		<div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Nombre Comercial del Cliente" class="form-control input-md" type="text">
+					  			<input id="nroguia" name="nroguia" placeholder="Nombre Comercial del Producto" class="form-control input-md" type="text">
 					  		</div>
 						</div>
 						<div class="form-group">

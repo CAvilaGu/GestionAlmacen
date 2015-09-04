@@ -6,7 +6,7 @@
                         <a href="index.html"><i class="fa fa-cubes fa-3x text-justify"></i> Entrada a Almacén</a>
                     </li>
                     <li>
-                        <a  href="ui.html"><i class="fa fa-industry fa-3x text-justify"></i> Proveedores</a>
+                        <a  href="ListProviderController"><i class="fa fa-industry fa-3x text-justify"></i> Proveedores</a>
                     </li>
                     <li class="text-center"><h5><strong>Ventas</strong></h5></li>
                     <li>
@@ -16,7 +16,7 @@
                         <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x text-justify"></i> Producción</a>
                     </li> 
                     <li  >
-                        <a  href="table.html"><i class="fa fa-users fa-3x text-justify"></i> Clientes</a>
+                        <a  href="listClientesController"><i class="fa fa-users fa-3x text-justify"></i> Clientes</a>
                     </li>
                     <li class="text-center"><h5><strong>Almacén</strong></h5></li>
                     <li  >

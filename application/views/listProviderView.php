@@ -23,41 +23,36 @@
 						    </thead>
 
 						    <tbody>
-						      <tr>    		
+
+<?
+if (!empty($Proveedores)) 
+{
+						    	foreach ($Proveedores->result() as $Proveedor) {
+						    	?>
+						      <tr>
 						      	<td>
 								  <label>
 						   			 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
 						 		 </label>  		
 								</td>
-						        <td>John</td>
-						        <td>Doe</td>
-						        <td>john@example.com</td>
-						        <td>Masisa</td>
-						      </tr>
-						        <tr>    		
-						      	<td>
-								  <label>
-						   			 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						 		 </label>  		
-								</td>
-						        <td>John</td>
-						        <td>Doe</td>
-						        <td>john@example.com</td>
-						        <td>Masisa</td>
-						      </tr>
+						        <td> <?=$Proveedor->nombreComercial; ?></td>
+						        <td> <?=$Proveedor->rif; ?></td>
+
+						      <? }}?>
+
 						    </tbody>
 						  </table>
 						</div>
 
 						<div class="col-md-2" stylus="float: right;">
 							<div style="background-color:gree; color: white; font-size: 16px; border-radius: 25px; padding: 40px 50px 5px 0px;"> 
-						        <button class="btn btn-success btn-md">Ver   </button>
+						        <button class="btn btn-success btn-md btn-block">Ver   </button>
 						    </div>
 							<div style="background-color:gree; color: white; font-size: 16px; border-radius: 25px; padding: 5px 50px 5px 0px;"> 
-						        <a href="" class="btn btn-success btn-md">Nuevo</a> 
+						        <a href="" class="btn btn-success btn-md btn-block">Nuevo</a> 
 						    </div>
 							<div style="background-color:gree; color: white; font-size: 16px; border-radius: 25px; padding: 5px 50px 5px 0px;"> 
-						        <a href="" class="btn btn-success btn-md">Eliminar</a> 
+						        <a href="" class="btn btn-success btn-md btn-block">Eliminar</a> 
 						    </div>
 						</div>
 
