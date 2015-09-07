@@ -1,16 +1,16 @@
-<!-- Lista de Clientes -->
+<!-- Lista de Productos -->
 <div id="page-wrapper" >
 	<div id="page-inner">
 		<div class="row">
 			<div class="col-md-12 radio">
-				<h1>Listado de Clientes</h1>   
+				<h1>Listado de Productos</h1>   
 			</div>
 		</div> 
 		<div class="row">
 			<div class="col-md-12"> <!-- Area de trabajo central -->
 				<div class="panel panel-default"> <!-- Titulo de la tabla -->
 					<div class="panel-heading"> 
-						<a href="AddClientesController" class="btn btn-success col-md-offset-10">
+						<a href="AddProductosController" class="btn btn-success col-md-offset-10">
 							<i class="fa fa-plus"></i>Agregar
 						</a> 
 					</div>
@@ -51,17 +51,19 @@
 									</thead>
 									<tbody>
 									<?
-									if (!empty($clientes)) {
-					    					foreach ($clientes->result() as $cliente) {
+									if (!empty($productos)) {
+					    					foreach ($productos->result() as $producto) {
 						    		?>
 										<tr class="gradeA odd">
-											<td class="sorting_1"> <?=$cliente->idCliente; ?> </td>
-											<td class=" "> <?=$cliente->nombre; ?></td>
-											<td class=" "> <?=$cliente->direccion; ?></td>
+											<td class="sorting_1"> <?=$producto->idProducto; ?> </td>
+							<!-- 				<td class=" "> <?=$producto->descripcion; ?></td>
+											<td class=" "> <?=$producto->direccion; ?></td>
 											<td class="center "></td>
 											<td class="center "></td>
-											<td style="text-align: center">
+											<td style="text-align: center"> -->
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
+													<!-- Productos del tipo Material Terminado -->
+													
   													<a href="#"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;
   													<a href="#"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>

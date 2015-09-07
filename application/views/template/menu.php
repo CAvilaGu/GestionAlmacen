@@ -6,7 +6,7 @@
                         <a href="index.html"><i class="fa fa-cubes fa-3x text-justify"></i> Entrada a Almacén</a>
                     </li>
                     <li>
-                        <a  href="ListProviderController"><i class="fa fa-industry fa-3x text-justify"></i> Proveedores</a>
+                        <a  href="listProveedoresController"><i class="fa fa-industry fa-3x text-justify"></i> Proveedores</a>
                     </li>
                     <li class="text-center"><h5><strong>Ventas</strong></h5></li>
                     <li>
@@ -20,7 +20,7 @@
                     </li>
                     <li class="text-center"><h5><strong>Almacén</strong></h5></li>
                     <li  >
-                        <a  href="form.html"><i class="fa fa-edit fa-3x text-justify"></i> Productos </a>
+                        <a  href="listProductosController"><i class="fa fa-edit fa-3x text-justify"></i> Productos </a>
                     </li>       
                     <li  >
                         <a   href="login.html"><i class="fa fa-bolt fa-3x text-justify"></i> Inventario</a>

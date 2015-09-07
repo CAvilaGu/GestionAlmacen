@@ -29,6 +29,7 @@
     <!-- TABLE STYLES-->
     <link href="assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
     <!-- /////////////////////////////////////////////// -->
+    <link href='https://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
 
     <title>Sistema de Gestión de Almacén</title>
     
@@ -37,7 +38,12 @@
         <div id="wrapper">
             <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0px; background-color: #DCDCDC;  border-bottom: black 2px solid;">
                 <div style="background-color:gree; color: white; padding: 2px 50px 2px 5px; float: left;"> 
-                    <img src="assets/images/logo.png" class="img-responsive" style="height: 80px; width: 250px;"/>
+                    <a href="Welcome"><img src="assets/images/logo.png" class="img-responsive" style="height: 80px; width: 250px;"/>
+                    </a>
+                </div>
+
+                <div class="col-md-7 text-center"> 
+                    <h1 style="font-family: 'Doppio One', sans-serif; font-size: 52px color: black;"> Sistema de Gestión de Alamcén </h1>
                 </div>
 
                 <div style="background-color:gree; color: white; padding: 35px 50px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 

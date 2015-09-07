@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ListProviderController extends CI_Controller {
+class AddProveedoresController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,16 +24,18 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-$this->load->model('listProviderModel', '', TRUE);
+//$this->load->model('listClientesModel', '', TRUE);
 }
 
 	public function index()
 	{
-		$datos['Proveedores'] = $this->listProviderModel->getDataProvider();
+		// Base de Datos
+
+
 		// $this->load->view('loginView');
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('listProviderView',$datos);
+		$this->load->view('addProveedoresView');
 		$this->load->view('template/footer');
 	}
 }

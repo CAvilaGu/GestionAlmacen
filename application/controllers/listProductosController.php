@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class AddClientesController extends CI_Controller {
+class ListProductosController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,18 +24,18 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-//$this->load->model('listClientesModel', '', TRUE);
+$this->load->model('listProductosModel', '', TRUE);
 }
 
 	public function index()
 	{
 		// Base de Datos
-
+		$datos['productos'] = $this->listProductosModel->obtenerProductos();
 
 		// $this->load->view('loginView');
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('addClientesView');
+		$this->load->view('listProductosView',$datos);
 		$this->load->view('template/footer');
 	}
 }
