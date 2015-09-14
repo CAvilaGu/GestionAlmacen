@@ -8,8 +8,11 @@
 		}
 		
 		public function obtenerClientes(){
-			$sql="SELECT * FROM tbl_sga_cliente
-				  ORDER BY nombre ASC;";
+			$sql="SELECT c.idCliente, c.nombre, c.direccion, tc.nroTelefonoCliente
+FROM tbl_sga_cliente as c, tbl_sga_telefono_cliente as tc, tbl_sga_correo_cliente as cc
+WHERE tc.idCliente = c.idCliente
+AND cc.idCliente = c.idCliente
+ORDER BY nombre ASC;";
 			$query= $this->db->query($sql);
 			return $query; 
 		}

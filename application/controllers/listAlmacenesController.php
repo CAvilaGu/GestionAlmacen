@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class ListAlmacenesController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,20 +18,24 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+function __construct()
+{
+parent::__construct();
+$this->load->library(array('session'));
+$this->load->helper('form');
+$this->load->helper('url');
+//$this->load->model('listClientesModel', '', TRUE);
+}
+
 	public function index()
 	{
+		// Base de Datos
+
+
 		// $this->load->view('loginView');
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('homeView');
-		// $this->load->view('listClientesView');
-		// $this->load->view('listStockView');
-		// $this->load->view('listProviderView');
-		$this->load->view('addStockView');
-		// $this->load->view('addProviderView');
-		// $this->load->view('addProducctionOrderView');
-		// $this->load->view('addClientView');
+		$this->load->view('listAlmacenesView');
 		$this->load->view('template/footer');
 	}
 }
-

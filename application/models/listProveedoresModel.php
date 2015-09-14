@@ -8,7 +8,7 @@
 		}
 		
 		public function obtenerProveedores(){
-			$sql="SELECT * FROM tblsga_proveedor
+			$sql="SELECT * FROM tbl_sga_proveedor
 				  ORDER BY nombreComercial ASC;";
 			$query= $this->db->query($sql);
 			return $query; 

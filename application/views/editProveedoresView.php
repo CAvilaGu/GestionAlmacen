@@ -17,7 +17,7 @@
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Código</label>  
 					  		<div class="col-md-5">
-					  			<input id="nroguia" name="nroguia" placeholder="Código del Proveedor " class="form-control input-md" type="text">
+					  			<input id="nroguia" name="nroguia" placeholder="Código del Proveedor " class="form-control input-md" type="text" disabled>
 					  		</div>
 						</div>
 						<div class="form-group">
@@ -65,7 +65,8 @@
 					</div>
 				</fieldset>
 				<a type="submit" class="btn btn-success col-md-1 col-md-offset-4" style="margin-right: 10px;" href="ListProveedoresController">  Atras  </a>
-				<button type="submit" class="btn btn-success col-md-1">Agregar</button>
+				<button type="submit" class="btn btn-success col-md-1" style="margin-right: 10px;">Guardar</button>
+				<button type="submit" class="btn btn-success col-md-1" style="margin-right: 10px;">Eliminar</button>		
 			</form>
   		</div>
   		<!-- Fin area trabajo -->

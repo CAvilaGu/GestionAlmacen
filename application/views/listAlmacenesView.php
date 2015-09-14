@@ -1,16 +1,16 @@
-<!-- Lista de Productos -->
+<!-- Lista de Almacenes -->
 <div id="page-wrapper" >
 	<div id="page-inner">
 		<div class="row">
 			<div class="col-md-12 radio">
-				<h1>Listado de Productos</h1>   
+				<h1>Listado de Almacenes</h1>   
 			</div>
 		</div> 
 		<div class="row">
 			<div class="col-md-12"> <!-- Area de trabajo central -->
 				<div class="panel panel-default"> <!-- Titulo de la tabla -->
 					<div class="panel-heading"> 
-						<a href="AddProductosController" class="btn btn-success col-md-offset-10">
+						<a href="AddController" class="btn btn-success col-md-offset-10">
 							<i class="fa fa-plus"></i>Agregar
 						</a> 
 					</div>
@@ -57,7 +57,7 @@
 											<td class="center "> </td>
 											<td style="text-align: center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
-  													<a href="EditProductosController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;
+  													<a href="EditController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;
   													<a href="#"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
 											</td>

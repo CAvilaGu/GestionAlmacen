@@ -8,8 +8,8 @@
 		}
 		
 		public function login_user($username,$password){
-			$this->db->where('nombreUsuario',$username);//como se llama en la bd
-			$this->db->where('contrasenaUsuario',$password);//contrasena de usuario
+			$this->db->where('idPersonal',$username);//como se llama en la bd
+			$this->db->where('contrasena',$password);//contrasena de usuario
 			$query = $this->db->get('usuarios');
 			if($query->num_rows() == 1)
 				{

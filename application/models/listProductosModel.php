@@ -8,7 +8,7 @@
 		}
 		
 		public function obtenerProductos(){
-			$sql="SELECT * FROM tbl_sga_producto_madera
+			$sql="SELECT * FROM tbl_sga_producto
 				  ORDER BY idProducto ASC;";
 			$query= $this->db->query($sql);
 			return $query; 

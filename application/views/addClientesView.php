@@ -19,6 +19,7 @@
 					  		<div class="col-md-2">
 					  			<select class="form-control">
 					  				<option value="V">V</option>
+					  				<option value="V">E</option>
 						      		<option value="J">J</option>
 					  			</select> 
 					  		</div>
@@ -29,13 +30,13 @@
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Nombre</label>  
 					  		<div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Nombre Comercial del Cliente" class="form-control input-md" type="text">
+					  			<input id="nroguia" name="nroguia" placeholder="Nombre del Cliente" class="form-control input-md" type="text">
 					  		</div>
 						</div>
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Dirección</label>  
 					  		<div class="col-md-8">
-								<textarea class="form-control" rows="3"></textarea>
+								<textarea placeholder="Avenida | Manzana | Estado | Ciudad" class="form-control" rows="3"></textarea>
 					  		</div>
 						</div>
 						<div class="form-group">
@@ -43,35 +44,22 @@
 					  		<div class="col-md-5">
 					  			<input id="nroguia" name="nroguia" placeholder="Número de Teléfono" class="form-control input-md" type="text">
 					  		</div>
-						</div>
-						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">Teléfono</label>  
-					  		<div class="col-md-5">
-					  			<input id="nroguia" name="nroguia" placeholder="Número de Teléfono" class="form-control input-md" type="text">
-					  		</div>
-						</div>
-						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">Teléfono</label>  
-					  		<div class="col-md-5">
-					  			<input id="nroguia" name="nroguia" placeholder="Número de Teléfono" class="form-control input-md" type="text">
-					  		</div>
-						</div>
+					  		<div>
+					  			<a href=""><img src="assets/images/text-plus-icon.png"></a>
+							</div>						</div>
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Correo Electrónico</label>  
-					  		<div class="col-md-8">
+					  		<div class="col-md-5">
 					  			<input id="nroguia" name="nroguia" placeholder="Dirección de Correo Electrónico" class="form-control input-md" type="text">
 					  		</div>
-						</div>
-						<div class="form-group">
-					  		<label class="col-md-3 control-label" for="nroguia">Correo Electrónico</label>  
-					  		<div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Dirección de Correo Electrónico" class="form-control input-md" type="text">
-					  		</div>
+					  		<div>
+					  			<a href=""><img src="assets/images/text-plus-icon.png"></a>
+							</div>
 						</div>
 					</div>
 				</fieldset>
 				<a type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;" href="ListClientesController">  Atras  </a>
-				<button type="submit" class="btn btn-success col-md-1">Procesar</button>
+				<button type="submit" class="btn btn-success col-md-1">Agragar</button>
 			</form>
   		</div>
   		<!-- Fin area trabajo -->
