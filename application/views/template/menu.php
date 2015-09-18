@@ -26,7 +26,31 @@
                         <a   href="login.html"><i class="fa fa-bolt fa-3x text-justify"></i> Inventario</a>
                     </li> 
                     <li  >
-                        <a   href="ListAlmacenesController"><i class="fa fa-laptop fa-3x text-justify"></i> Almacenes</a>
+                        <a   href="#"><i class="fa fa-laptop fa-3x text-justify"></i> Almacenes</a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="ListAlmacenesController">Almacen</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Link</a>
+                                    </li>
+
+                                </ul>
+                               
+                            </li>
+                        </ul>
                     </li> 
                 </ul>
 
