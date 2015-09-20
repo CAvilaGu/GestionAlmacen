@@ -1,4 +1,5 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 	class LoginModel extends CI_Model {
 
@@ -6,18 +7,18 @@
 			parent::__construct();
 			$this->load->database();
 		}
-		
-		public function login_user($username,$password){
-			$this->db->where('idPersonal',$username);//como se llama en la bd
-			$this->db->where('contrasena',$password);//contrasena de usuario
-			$query = $this->db->get('usuarios');
-			if($query->num_rows() == 1)
-				{
-					return $query->row();
+		public function login($username,$password){
+			$this->db->where('idPersonal',$username);
+			$this->db->where('contrasena',$password);
+			$q=$this->db->get('tbl_sga_personal');
+
+			if($q->num_rows()>0){
+				return true;
 			}else{
-					$this->session->set_flashdata('usuario_incorrecto','Los datos introducidos son incorrectos');
-					redirect(base_url().'loginView','refresh');
-				}
+				return false;
+			}
+
 		}
+		
 	}
 ?>
