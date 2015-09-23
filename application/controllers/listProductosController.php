@@ -24,13 +24,13 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-$this->load->model('listProductosModel', '', TRUE);
+$this->load->model('ProductosModel', '', TRUE);
 }
 
 	public function index()
 	{
 		// Base de Datos
-		$datos['productos'] = $this->listProductosModel->obtenerProductos();
+		$datos['productos'] = $this->ProductosModel->obtenerProductos();
 
 		// $this->load->view('loginView');
 		$this->load->view('template/header');

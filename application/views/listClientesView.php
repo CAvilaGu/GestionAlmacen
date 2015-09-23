@@ -32,11 +32,11 @@
 								<table id="dataTables-example" class="table table-striped table-hover dataTable no-footer" aria-describedby="dataTables-example_info"> <!-- table-bordered para hacer los bordes visibles -->
 									<thead>
 										<tr role="row">
-											<th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="width: 158px;" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending">Identificador</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="width: 231px;" aria-label="Browser: activate to sort column ascending">Nombre</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="width: 209px;" aria-label="Platform(s): activate to sort column ascending">Dirección</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="width: 133px;" aria-label="Engine version: activate to sort column ascending">Teléfonos</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="width: 92px;" aria-label="CSS grade: activate to sort column ascending">Correos</th>
+											<th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending">ID</th>
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="" aria-label="Browser: activate to sort column ascending">Nombre</th>
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="" aria-label="Platform(s): activate to sort column ascending">Dirección</th>
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="" aria-label="Engine version: activate to sort column ascending">Teléfonos</th>
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" style="" aria-label="CSS grade: activate to sort column ascending">Correos</th>
 											<th style="width: 92px;"></th>
 										</tr>
 									</thead>
@@ -49,10 +49,11 @@
 											<td class="sorting_1"> <?=$cliente->idCliente; ?> </td>
 											<td class=" "> <?=$cliente->nombre; ?></td>
 											<td class=" "> <?=$cliente->direccion; ?></td>
-											<td class="center "> asdasd <br>  ;asdasdasd <br></td>
-											<td class="center "></td>
+						    				<td class=" "> <?=$cliente->nroTelefonoCliente; ?> <br> </td>
+											<td class=" "> <?=$cliente->direccion; ?></td>
 											<td style="text-align: center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
+													<a href="#"><i class="fa fa-eye fa-lg"></i></a>&nbsp;&nbsp;&nbsp;
   													<a href="EditClientesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;
   													<a href="#"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
