@@ -24,13 +24,13 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-$this->load->model('ProveedoresModel', '', TRUE);
+$this->load->model('listProveedoresModel', '', TRUE);
 }
 
 	public function index()
 	{
 		// Base de Datos
-		$datos['proveedores'] = $this->ProveedoresModel->obtenerProveedores();
+		$datos['proveedores'] = $this->listProveedoresModel->obtenerProveedores();
 
 		// $this->load->view('loginView');
 		$this->load->view('template/header');

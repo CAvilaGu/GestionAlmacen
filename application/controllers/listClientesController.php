@@ -24,13 +24,13 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-$this->load->model('ClientesModel', '', TRUE);
+$this->load->model('listClientesModel', '', TRUE);
 }
 
 	public function index()
 	{
 		// Base de Datos
-		$datos['clientes'] = $this->ClientesModel->obtenerClientes();
+		$datos['clientes'] = $this->listClientesModel->obtenerClientes();
 
 		// $this->load->view('loginView');
 		$this->load->view('template/header');
