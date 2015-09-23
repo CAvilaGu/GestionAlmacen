@@ -46,7 +46,7 @@
                 </div>
 
                 <div style="background-color:gree; color: white; padding: 35px 50px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 
-                    <a href="logout" class="btn btn-success btn-md btn-block ">Salir</a> 
+                    <a href="" class="btn btn-success btn-md btn-block ">Salir</a> 
                 </div>
 
                 <div style="background-color:gree; color: white; padding: 35px 5px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 
