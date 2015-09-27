@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 
 	$('#clcMail').click(function(){
-		$('#correo').append('<input id="mail'+mail+'" name="nroguia" placeholder="Número de Teléfono" class="form-control input-md" type="text">');
+		$('#correo').append('<input id="mail'+mail+'" name="nroguia" placeholder="Dirección de Correo Electronico" class="form-control input-md" type="text">');
 		$('#correo').append('<br>');
 		mail++;
 	});
