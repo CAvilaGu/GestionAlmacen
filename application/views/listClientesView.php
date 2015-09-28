@@ -53,7 +53,7 @@
 											<td class="center "></td>
 											<td style="text-align: center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
-  													<a href="EditClientesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;
+  													<a href=<?echo'"EditClientesController/cursos"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;
   													<a href="#"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
 											</td>

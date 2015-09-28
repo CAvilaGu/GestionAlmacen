@@ -30,9 +30,14 @@ $this->load->helper('url');
 	public function index()
 	{
 		// Base de Datos
-
-
 		// $this->load->view('loginView');
+		$this->load->view('template/header');
+		$this->load->view('template/menu');
+		$this->load->view('editClientesView');
+		$this->load->view('template/footer');
+	}
+	function cursos()
+	{
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
 		$this->load->view('editClientesView');
