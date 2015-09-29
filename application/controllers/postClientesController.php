@@ -32,8 +32,9 @@ parent::__construct();
 		
 		// Base de Datos
 		 // $this->postClientesModel->obtenerClientes();
-		$this->postClientesModel->recibirDatos();
-		$this->postClientesModel->insertarCliente();
+		$x=$this->postClientesModel->recibirDatos();
+		if($x==0)
+			$this->postClientesModel->insertarCliente();
 		// // $this->load->view('loginView');
 		// $this->load->view('template/header');
 		// $this->load->view('template/menu');

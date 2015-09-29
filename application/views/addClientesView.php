@@ -8,7 +8,7 @@
         </div>
          <!-- Area de trabajo -->
         <div>
-			<form class="form-horizontal">
+			<div class="form-horizontal">
 				<fieldset>
 					<!-- Form Name -->
 					<legend>Detalle Cliente</legend>
@@ -62,7 +62,7 @@
 				</fieldset>
 				<a type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;" href="ListClientesController">  Atras  </a>
 				<button type="submit" id="agregar" class="btn btn-success col-md-1">Agragar</button>
-			</form>
+			</div>
   		</div>
   		<!-- Fin area trabajo -->
 	</div>

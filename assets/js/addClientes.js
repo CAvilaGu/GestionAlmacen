@@ -42,7 +42,15 @@ $(document).ready(function(){
 			   data: {tipo:tipo,codigo:codigo,nombre:nombre,direccion:direccion,telefono:telefono,correo:correo},
 			   url: "postClientesController",
 			   success: function(msg){
-			     alert(msg)
+			   	
+			     if(msg=='Error'){
+			     	alert('Error, no se guardo el cliente. Verifique si ya existe el cliente');
+			     }else if(msg=='Success'){
+			     	alert('El cliente ha sido guardado correctamente');
+			     	 window.location.reload();
+			     }else{
+			     	alert(msg);
+			     }
 			   }
 			});
 	});
