@@ -12,35 +12,36 @@
 		public function recibirDatos(){
 			if(!isset($_POST['codigo'])){
 				echo "Codigo cliente no ingresado ";
-				return;
+				return 1;
 			}else{
 				$this->codigo=$_POST['tipo']."-".$_POST['codigo'];
 			}
 
 			if(!isset($_POST['nombre'])){
 				echo "nombre cliente no ingresado ";
-				return;
+				return 1;
 			}else{
 				$this->nombre=$_POST['nombre'];
 			}
 			if(!isset($_POST['direccion'])){
 				echo "direccion cliente no ingresado ";
-				return;
+				return 1;
 			}else{
 				$this->direccion=$_POST['direccion'];
 			}
 			if(!isset($_POST['telefono'])){
 				echo "telefono cliente no ingresado ";
-				return;
+				return 1;
 			}else{
 				$this->telefono=$_POST['telefono'];
 			}
 			if(!isset($_POST['correo'])){
 				echo "Correo cliente no ingresado. ";
-				return;
+				return 1;
 			}else{
 				$this->correo=$_POST['correo'];
 			}
+			return 0;
 		}
 
 		public function insertarCliente(){
@@ -60,10 +61,10 @@
 			 $query= $this->db->query($sql);
 
 			if($query->row()->result=='ERROR'){
-				echo 'Error, cliente ya existe';
+				echo 'Error';
 				return;
 			}else{
-				echo 'Cliente guardado correctamente';
+				echo 'Success';
 				return;
 			}
 		}
