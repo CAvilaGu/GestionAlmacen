@@ -51,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'loginControl';
 $route['404_override'] = '';
+$route['EditClientesController/(:any)'] = "EditClientesController/cursos/$1";
 // $route['ListClientesController/(:any)']='fun/product_lookup';
 $route['translate_uri_dashes'] = FALSE;

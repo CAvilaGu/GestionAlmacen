@@ -24,19 +24,19 @@
 					  			</select> 
 					  		</div>
 					  		<div class="col-md-3">
-					  			<input id="disabledInput" name="nroguia" placeholder="Código del Cliente " class="form-control input-md" type="text" disabled>
+					  			<input id="disabledInput" name="nroguia" placeholder=<? echo($idCliente) ?> class="form-control input-md" type="text" disabled>
 					  		</div>
 						</div>
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Nombre</label>  
 					  		<div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Nombre del Cliente" class="form-control input-md" type="text">
+					  			<input id="nroguia" name="nroguia" placeholder="Nombre del Cliente" class="form-control input-md" type="text" value=<? echo($nombre) ?>>
 					  		</div>
 						</div>
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Dirección</label>  
 					  		<div class="col-md-8">
-								<textarea placeholder="Avenida | Manzana | Estado | Ciudad" class="form-control" rows="3"></textarea>
+								<textarea placeholder="Avenida | Manzana | Estado | Ciudad" class="form-control"rows="3"><? echo($direccion) ?></textarea>
 					  		</div>
 						</div>
 						<div class="form-group">
@@ -45,7 +45,7 @@
 					  			<input id="nroguia" name="nroguia" placeholder="Número de Teléfono" class="form-control input-md" type="text">
 					  		</div>
 					  		<div>
-					  			<img src="assets/images/text-plus-icon.png">
+					  			<img src="../assets/images/text-plus-icon.png">
 							</div>
 						</div>
 						<div class="form-group">
@@ -54,7 +54,7 @@
 					  			<input id="nroguia" name="nroguia" placeholder="Dirección de Correo Electrónico" class="form-control input-md" type="text">
 					  		</div>
 					  		<div>
-					  			<img src="assets/images/text-plus-icon.png">
+					  			<img src="../assets/images/text-plus-icon.png">
 							</div>
 						</div>
 					</div>

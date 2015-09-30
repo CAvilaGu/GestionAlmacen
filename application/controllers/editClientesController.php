@@ -24,7 +24,7 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-//$this->load->model('listClientesModel', '', TRUE);
+$this->load->model('editClientesModel', '', TRUE);
 }
 
 	public function index()
@@ -36,11 +36,15 @@ $this->load->helper('url');
 		$this->load->view('editClientesView');
 		$this->load->view('template/footer');
 	}
-	function cursos()
+	public function cursos()
 	{
-		$this->load->view('template/header');
+
+		$id=$this->uri->segment(2);
+		$cliente=$this->editClientesModel->obtenerCliente($id);
+
+		$this->load->view('template/1header');
 		$this->load->view('template/menu');
-		$this->load->view('editClientesView');
+		$this->load->view('editClientesView',$cliente->row(1));
 		$this->load->view('template/footer');
 	}
 }
