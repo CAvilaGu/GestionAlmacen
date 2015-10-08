@@ -61,7 +61,7 @@
 					</div>
 				</fieldset>
 				<a type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;" href="ListClientesController">  Atras  </a>
-				<button type="submit" id="agregar" class="btn btn-success col-md-1">Agragar</button>
+				<button type="submit" id="agregar" class="btn btn-success col-md-1">Agregar</button>
 			</div>
   		</div>
   		<!-- Fin area trabajo -->
