@@ -8,20 +8,14 @@
 		}
 		
 		public function obtenerClientes(){
-			$sql="SELECT c.idCliente, c.nombre, c.direccion, tc.nroTelefonoCliente
-FROM tbl_sga_cliente as c, tbl_sga_telefono_cliente as tc, tbl_sga_correo_cliente as cc
-WHERE tc.idCliente = c.idCliente
-AND cc.idCliente = c.idCliente
-ORDER BY nombre ASC;";
+			$sql="SELECT ctc.idCliente, ctc.nombre, ctc.direccion, ctc.nroTelefonoCliente, ccc.dirCorreoCliente
+FROM (SELECT c.idCliente, c.nombre, c.direccion, tc.nroTelefonoCliente FROM tbl_sga_cliente as c LEFT OUTER JOIN tbl_sga_telefono_cliente as tc ON c.idCliente = tc.idCliente
+) as ctc 
+LEFT OUTER JOIN (SELECT c.idCliente, cc.dirCorreoCliente FROM tbl_sga_cliente as c LEFT OUTER JOIN tbl_sga_correo_cliente as cc ON c.idCliente = cc.idCliente) as ccc ON ctc.idCliente = ccc.idCliente
+GROUP BY ctc.idCliente
+ORDER BY ctc.nombre ASC;";
 			$query= $this->db->query($sql);
 			return $query; 
-		}
-
-		public function eliminarClientes(){
-		$sql="SELECT * FROM tbl_sga_cliente
-			  ORDER BY nombre ASC;";
-		$query= $this->db->query($sql);
-		return $query; 
 		}
 	}
 ?>
