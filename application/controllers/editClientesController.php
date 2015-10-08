@@ -41,10 +41,12 @@ $this->load->model('editClientesModel', '', TRUE);
 
 		$id=$this->uri->segment(2);
 		$cliente=$this->editClientesModel->obtenerCliente($id);
-
+		$datos['telefonos']=$this->editClientesModel->obtenerTlf($id);
+		$datos['correos']=$this->editClientesModel->obtenerCorreo($id);
+		$datos['clientes']=$cliente->row(1);
 		$this->load->view('template/1header');
-		$this->load->view('template/menu');
-		$this->load->view('editClientesView',$cliente->row(1));
+		$this->load->view('template/1menu');
+		$this->load->view('editClientesView',$datos);
 		$this->load->view('template/footer');
 	}
 }
