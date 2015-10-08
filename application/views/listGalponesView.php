@@ -1,16 +1,16 @@
-<!-- Lista de Clientes -->
+<!-- Lista de Galpones -->
 <div id="page-wrapper" >
 	<div id="page-inner">
 		<div class="row">
 			<div class="col-md-12 radio">
-				<h1>Listado de Clientes</h1>   
+				<h1>Listado de Galpones</h1>   
 			</div>
 		</div> 
 		<div class="row">
 			<div class="col-md-12"> <!-- Area de trabajo central -->
 				<div class="panel panel-default"> <!-- Titulo de la tabla -->
 					<div class="panel-heading"> 
-						<a href="AddClientesController" class="btn btn-success col-md-offset-10">
+						<a href="AddGalponesController" class="btn btn-success col-md-offset-10">
 							<i class="fa fa-plus"></i>Agregar
 						</a> 
 					</div>
