@@ -63,9 +63,9 @@
 					  			<input id="nroguia" name="nroguia" placeholder="Dirección de Correo Electrónico" value=<? echo '"'.$correo->dirCorreoCliente.'"'; ?> class="form-control input-md" type="text">
 					  		</div>
 					  		<div class="col-md-4">
-								
+								<div>
 						  			<img src="../assets/images/text-plus-icon.png">
-							
+								</div>
 					  		</div>
 
 					  		<?

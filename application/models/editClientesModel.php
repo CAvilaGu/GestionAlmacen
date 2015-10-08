@@ -15,7 +15,7 @@
 			return $query; 
 		}
 		public function obtenerTlf($id){
-				$sql="SELECT nroTelefonoCliente
+				$sql="SELECT nroTelefonoCliente 
 				FROM tbl_sga_telefono_cliente 
 				WHERE idCliente='$id'";
 				$query= $this->db->query($sql);
@@ -26,6 +26,11 @@
 				FROM tbl_sga_correo_cliente 
 				WHERE idCliente='$id'";
 				$query= $this->db->query($sql);
+				return $query; 
+		}
+		public function eliminarCliente($id){
+			$sql="call eliminarCliente('$id')";
+			$query= $this->db->query($sql);
 				return $query; 
 		}
 

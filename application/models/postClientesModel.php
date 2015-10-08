@@ -7,7 +7,7 @@
 			parent::__construct();
 			$this->load->database();
 		}
-		
+		 
 
 		public function recibirDatos(){
 			if(!isset($_POST['codigo'])){
