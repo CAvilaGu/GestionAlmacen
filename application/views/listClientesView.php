@@ -54,13 +54,8 @@
 											<td style="text-align: center" class="center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
 													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
-<<<<<<< HEAD
-  													<a href=<?echo'"EditClientesController/'.$cliente->idCliente.'"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;
-  													<a href=<?echo'"EliminarClientesController/cliente/'.$cliente->idCliente.'"'?>><i class="fa fa-trash-o fa-lg"></i></a>
-=======
-  													<a href="EditClientesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;|
-  													<a href="#" style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
->>>>>>> 3486273811b5fedb1f8d7d39930e8bc35862322f
+  													<a href=<?echo'"EditClientesController/'.$cliente->idCliente.'"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;|
+  													<a href=<?echo'"EliminarClientesController/cliente/'.$cliente->idCliente.'"'?>style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
 											</td>
 										</tr>
