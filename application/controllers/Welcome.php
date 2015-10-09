@@ -27,7 +27,7 @@ class Welcome extends CI_Controller {
 		// $this->load->view('listClientesView');
 		// $this->load->view('listStockView');
 		// $this->load->view('listProviderView');
-		$this->load->view('addStockView');
+		// $this->load->view('addStockView');
 		// $this->load->view('addProviderView');
 		// $this->load->view('addProducctionOrderView');
 		// $this->load->view('addClientView');
