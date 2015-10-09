@@ -1,16 +1,16 @@
-<!-- Lista de Clientes -->
+<!-- Lista de Galpones -->
 <div id="page-wrapper" >
 	<div id="page-inner">
 		<div class="row">
 			<div class="col-md-12 radio">
-				<h1>Listado de Clientes</h1>   
+				<h1>Listado de Galpones</h1>   
 			</div>
 		</div> 
 		<div class="row">
 			<div class="col-md-12"> <!-- Area de trabajo central -->
 				<div class="panel panel-default"> <!-- Titulo de la tabla -->
 					<div class="panel-heading"> 
-						<a href="AddClientesController" class="btn btn-success col-md-offset-10">
+						<a href="AddGalponesController" class="btn btn-success col-md-offset-10">
 							<i class="fa fa-plus"></i>Agregar
 						</a> 
 					</div>
@@ -54,13 +54,8 @@
 											<td style="text-align: center" class="center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
 													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
-<<<<<<< HEAD
-  													<a href=<?echo'"EditClientesController/'.$cliente->idCliente.'"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;
-  													<a href=<?echo'"EliminarClientesController/cliente/'.$cliente->idCliente.'"'?>><i class="fa fa-trash-o fa-lg"></i></a>
-=======
   													<a href="EditClientesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;|
   													<a href="#" style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
->>>>>>> 3486273811b5fedb1f8d7d39930e8bc35862322f
 												</div>
 											</td>
 										</tr>

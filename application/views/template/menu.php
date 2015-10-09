@@ -31,13 +31,13 @@
                         <a   href="login.html"><i class="fa fa-pencil-square-o fa-3x text-justify"></i> Inventario</a>
                     </li> 
                     <li  >
-                        <a   href="ListAlmacenesController"><i class="fa fa-laptop fa-3x text-justify"></i> Almacenes</a>
+                        <a   href=""><i class="fa fa-laptop fa-3x text-justify"></i> Almacenes</a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a  href="tab-panel.html"><i class="fa fa-qrcode fa-3x text-justify"></i> Galpones</a>
+                                <a  href="ListGalponesController"><i class="fa fa-qrcode fa-3x text-justify"></i> Galpones</a>
                             </li>
                             <li>
-                                <a   href="chart.html"><i class="fa fa-bar-chart-o fa-3x text-justify"></i> Movimientos</a>
+                                <a   href=""><i class="fa fa-bar-chart-o fa-3x text-justify"></i> Movimientos</a>
                                     <ul class="nav nav-third-level">
                                     <li>
                                         <a href="#">Internos</a>
