@@ -8,17 +8,11 @@
 		}
 		
 		public function obtenerProductos(){
-			$sql="SELECT * FROM tbl_sga_producto
+			$sql="SELECT idProducto, descripcion, tipoMadera, dimAncho, dimAlto, dimLargo, tipoProducto, inventarioDisponible 
+				  FROM tbl_sga_producto
 				  ORDER BY idProducto ASC;";
 			$query= $this->db->query($sql);
 			return $query; 
-		}
-
-		public function eliminarProveedores(){
-		$sql="SELECT * FROM tbl_sga_cliente
-			  ORDER BY nombre ASC;";
-		$query= $this->db->query($sql);
-		return $query; 
 		}
 	}
 ?>

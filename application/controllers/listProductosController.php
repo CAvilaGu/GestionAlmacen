@@ -31,8 +31,7 @@ $this->load->model('listProductosModel', '', TRUE);
 	{
 		// Base de Datos
 		$datos['productos'] = $this->listProductosModel->obtenerProductos();
-
-		// $this->load->view('loginView');
+		//---------------------------------//
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
 		$this->load->view('listProductosView',$datos);
