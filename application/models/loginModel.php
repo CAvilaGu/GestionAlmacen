@@ -10,14 +10,11 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 			$this->db->where('idPersonal',$username);
 			$this->db->where('contrasena',$password);
 			$q=$this->db->get('tbl_sga_personal');
-
 			if($q->num_rows()>0){
 				return true;
 			}else{
 				return false;
 			}
-
 		}	
 	}
-?>
-	
+?>	
