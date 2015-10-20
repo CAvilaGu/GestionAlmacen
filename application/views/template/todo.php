@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html>
-    <head>
+ <head>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/styleSheet.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
+    <!-- /////////////////////////////////////////////// -->
     <!-- FONTAWESOME STYLES-->
     <link href="../assets/css/font-awesome.css" rel="stylesheet"  type="text/css"/>
     <!-- MORRIS CHART STYLES-->
@@ -36,24 +35,28 @@
     <title>Sistema de Gestión de Almacén</title>
     
     </head>
-    <body>
-        <div id="wrapper">
-            <nav class="navbar navbar-default navbar-cls-top" role="navigation" style="margin-bottom: 0px; background-color: #DCDCDC;  border-bottom: black 2px solid;">
-                <div style="background-color:gree; color: white; padding: 2px 50px 2px 5px; float: left;"> 
-                    <a href="Welcome"><img src="../assets/images/logo.png" class="img-responsive" style="height: 80px; width: 250px;"/></a>
-                </div>
+<body>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-                <div class="col-md-7 text-center"> 
-                    <h1 style="font-family: 'Doppio One', sans-serif; font-size: 52px color: black;">Sistema de Gestión de Almacén</h1>
-                </div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-                <div style="background-color:gree; color: white; padding: 35px 50px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 
-                    <a href="logout" class="btn btn-success btn-md btn-block ">Salir</a> 
-                </div>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
 
-                <div style="background-color:gree; color: white; padding: 35px 5px 5px 0px; float: right;font-size: 16px; border-radius: 25px;"> 
-                        <a href="" class="btn btn-success btn-md btn-block ">Perfil</a> 
-                </div>
-            </nav>  
-        </div> 
-               <!-- /. NAV TOP  -->
+  </div>
+</div>
+</body>
+</html>

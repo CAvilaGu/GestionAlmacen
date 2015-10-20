@@ -47,7 +47,8 @@
 					  		</div>
 					  		<div>
 					  			<a id="clcTlf"><img src="assets/images/text-plus-icon.png"></a>
-							</div>						</div>
+							</div>						
+						</div>
 						<div class="form-group">
 					  		<label class="col-md-3 control-label" for="nroguia">Correo Electrónico</label>  
 					  		<div class="col-md-5" id="correo">

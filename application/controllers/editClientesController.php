@@ -31,10 +31,7 @@ $this->load->model('editClientesModel', '', TRUE);
 	{
 		// Base de Datos
 		// $this->load->view('loginView');
-		$this->load->view('template/header');
-		$this->load->view('template/menu');
-		$this->load->view('editClientesView');
-		$this->load->view('template/footer');
+		
 	}
 	public function cursos()
 	{

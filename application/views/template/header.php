@@ -17,8 +17,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styleSheet.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- /////////////////////////////////////////////// -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+   
     <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet"  type="text/css"/>
     <!-- MORRIS CHART STYLES-->
@@ -31,6 +30,9 @@
     <!-- /////////////////////////////////////////////// -->
     <link href='https://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
 
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+
+    <script src="assets/js/jquery-1.10.2.js"></script>
     <title>Sistema de Gestión de Almacén</title>
     
     </head>
