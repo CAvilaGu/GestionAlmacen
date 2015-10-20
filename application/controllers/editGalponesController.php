@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ListGalponesController extends CI_Controller {
+class EditGalponesController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,17 +24,17 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-$this->load->model('listGalponesModel', '', TRUE);
+// $this->load->model('listGalponesModel', '', TRUE);
 }
 
 	public function index()
 	{
-		// Base de Datos
-		$datos['galpones'] = $this->listGalponesModel->obtenerGalpones();
-		// #############
+		// Base de Datos##
+		// $datos['clientes'] = $this->listClientesModel->obtenerClientes();
+		// ################
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('listGalponesView', $datos);
+		$this->load->view('editGalponesView');
 		$this->load->view('template/footer');
 	}
 }
