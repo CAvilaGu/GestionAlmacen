@@ -70,5 +70,11 @@
 			}
 			return 0;
 		}
+
+		public function eliminar_proveedor($id){
+			$sql="call eliminarProveedor('$id')";
+			$query= $this->db->query($sql);
+				return $query; 
+		}
 	}
 ?>

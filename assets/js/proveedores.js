@@ -57,8 +57,9 @@ var tlf=1,mail=1;
 			$.ajax({
 				type: "POST",
 			   data: {codigo:codigo,rif:rif,nombreC:nombreC,nombreF:nombreF,direccion:direccion,telefono:telefono,correo:correo},
-			   url: "PostInsertarProveedoresController",
+			   url: "proveedoresController/insertar",
 			   success: function(msg){
+
 			     	if(msg==0){
 			     		alert('Proveedor insertado correctamente')
 			     		 window.location.reload();
@@ -75,4 +76,17 @@ var tlf=1,mail=1;
 
 	function ocultar(a){
 		$('#'+a).hide();
+	}
+	function eliminar(a){
+		$.post("proveedoresController/eliminar",{rif:a})
+		.done(function(msg){
+			if (msg==0) {
+				alert('Proveedor eliminaddo correctamente')
+			    window.location.reload();
+			}
+			else{
+				window.location.reload();
+			}
+				
+		});
 	}

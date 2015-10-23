@@ -57,7 +57,7 @@
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
 													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
   													<a href="EditProveedoresController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;|
-  													<a href="#"><i style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
+  													<a href="#" onclick=<? echo "eliminar('".$proveedor->idProveedor."')";?> ><i style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
 											</td>
 										</tr>
@@ -111,5 +111,4 @@
 		</div>
 	</div>
 </div>
-
-
+<script src="assets/js/proveedores.js"></script>
