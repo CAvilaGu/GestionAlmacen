@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- BOOTSTRAP STYLES-->
+    <script src="assets/js/jquery-1.10.2.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/simple-sidebar.css" /> -->
     <!-- FONTAWESOME STYLES-->
