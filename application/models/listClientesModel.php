@@ -17,5 +17,11 @@ ORDER BY ctc.nombre ASC;";
 			$query= $this->db->query($sql);
 			return $query; 
 		}
+
+		// 		public function obtenerCliente(pidCliente){
+		// 	$sql="";
+		// 	$query= $this->db->query($sql);
+		// 	return $query; 
+		// }
 	}
 ?>
