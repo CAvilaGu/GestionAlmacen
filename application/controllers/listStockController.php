@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class listMovimientosExternosController extends CI_Controller {
+class ListStockController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -34,7 +34,7 @@ $this->load->helper('url');
 
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('listMovimientosExternosView');
+		$this->load->view('listStockView');
 		$this->load->view('template/footer');
 	}
 }

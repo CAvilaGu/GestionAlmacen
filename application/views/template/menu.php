@@ -3,7 +3,7 @@
                 <ul class="nav" id="main-menu">
                     <li class="text-center"><h5><strong>COMPRAS</strong></h5></li>
                     <li>
-                        <a href="index.html"><i class="fa fa-cubes fa-3x text-justify"></i> Entrada a Almacén</a>
+                        <a href="ListStockController"><i class="fa fa-cubes fa-3x text-justify"></i> Entrada a Almacén</a>
                     </li>
                     <li>
                         <a  href="ListProveedoresController"><i class="fa fa-industry fa-3x text-justify"></i> Proveedores</a>
