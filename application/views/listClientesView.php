@@ -32,11 +32,11 @@
 								<table id="dataTables-example" class="table table-striped table-hover dataTable no-footer" aria-describedby="dataTables-example_info"> <!-- table-bordered para hacer los bordes visibles -->
 									<thead>
 										<tr role="row">
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Rendering engine: activate to sort column ascending">ID</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="ascending" aria-label="Browser: activate to sort column ascending">Nombre</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Platform(s): activate to sort column ascending">Dirección</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Engine version: activate to sort column ascending">Teléfono</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="CSS grade: activate to sort column ascending">Correo</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Rendering engine: activate to sort column ascending">ID</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="ascending" aria-label="Browser: activate to sort column ascending">Nombre</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Platform(s): activate to sort column ascending">Dirección</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Engine version: activate to sort column ascending">Teléfono</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="CSS grade: activate to sort column ascending">Correo</th>
 											<th style="width: 92px;"></th>
 										</tr>
 									</thead>
@@ -46,16 +46,16 @@
 					    					foreach ($clientes->result() as $cliente) {
 						    		?>
 										<tr class="gradeA odd">
-											<td class="sorting_1"> <?=$cliente->idCliente; ?> </td>
-											<td class="center"> <?=$cliente->nombre; ?></td>
-											<td class="center"> <?=$cliente->direccion; ?></td>
-											<td class="center"> <?=$cliente->nroTelefonoCliente; ?></td>
-											<td class="center"> <?=$cliente->dirCorreoCliente; ?></td>
+											<td style="text-align: center" class="sorting_1"> <?=$cliente->idCliente; ?> </td>
+											<td style="text-align: center" class="center"> <?=$cliente->nombre; ?></td>
+											<td style="text-align: center" class="center"> <?=$cliente->direccion; ?></td>
+											<td style="text-align: center" class="center"> <?=$cliente->nroTelefonoCliente; ?></td>
+											<td style="text-align: center" class="center"> <?=$cliente->dirCorreoCliente; ?></td>
 											<td style="text-align: center" class="center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
-													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
-  													<a href=<?echo'"EditClientesController/'.$cliente->idCliente.'"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;|
-  													<a href=<?echo'"EliminarClientesController/cliente/'.$cliente->idCliente.'"'?>style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
+													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal<?=$cliente->idCliente; ?>"></i></a>&nbsp;&nbsp;
+  													<a href= <?='"EditClientesController/'.$cliente->idCliente.'"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;|
+  													<a href= <?='"EliminarClientesController/cliente/'.$cliente->idCliente.'"'?>style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
 											</td>
 										</tr>
@@ -66,28 +66,60 @@
 									</tbody>
 								</table>
 
-<!-- POPUP, NO FUNCIONA OPCACA TODA LA PANTALLA//////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- POPUP, NO FUNCIONA OPCACA TODA LA PANTALLA ############################################################ -->
+<?if (!empty($clientes)) {
+	foreach ($clientes->result() as $cliente) {
+?>
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="myModal<?=$cliente->idCliente; ?>" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h3 class="modal-title"> <?=$cliente->nombre;?> </h3>
       </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
+      <div class="modal-body row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="form-group col-md-12">
+		  		<label class="col-md-3 control-label" for="nroguia">Código</label> 
+		  		<div class="col-md-5">
+		  			<input id="codigo" name="codigo" placeholder="Código del Cliente " class="form-control input-md" type="text" value= <?=$cliente->idCliente;?> readonly>
+		  		</div>
+			</div>
+			<div class="form-group col-md-12">
+		  		<label class="col-md-3 control-label" for="nroguia">Dirección</label>  
+		  		<div class="col-md-8">
+					<textarea  style="resize:none;" id="direccion" class="form-control" rows="3" disabled readonly> <?=$cliente->direccion;?> </textarea>
+		  		</div>
+			</div>
+			<div class="form-group col-md-12">
+		  		<label class="col-md-3 control-label" for="nroguia">Teléfono </label>  
+		  		<div class="col-md-5" id="telefono">
+		  			<input id="tlf0" name="tlf0" placeholder="Número de Teléfono" class="form-control input-md" type="text">
+		  			<br>  			
+		  		</div>
+			</div>
+			<div class="form-group col-md-12">
+		  		<label class="col-md-3 control-label" for="nroguia">Correo Electrónico</label>  
+		  		<div class="col-md-5" id="correo">
+		  			<input id="mail0" name="mail" placeholder="Dirección de Correo Electrónico" class="form-control input-md" type="text">
+		  			<br>  	
+		  		</div>
+			</div>
+		</div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
-
   </div>
 </div>
-<!-- //////////////////////////////////////////////////////////////////////////////////////// -->
+									<?
+											}
+										}	
+									?>	
+<!-- ###################################################################################################### -->
 
 								<div class="row"> <!-- Pie de pagina de la tabla -->
 									<div class="col-sm-6">
@@ -109,5 +141,3 @@
 		</div>
 	</div>
 </div>
-
-

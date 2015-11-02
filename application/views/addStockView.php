@@ -48,7 +48,7 @@
 						<div class="form-group">
 						  <label class="col-md-4 control-label" for="fechaEntrada">Fecha Entrada</label>  
 						  <div class="col-md-7">
-						  	<input id="fechaEntrada" name="fechaEntrada" placeholder="placeholder" class="form-control input-md" type="text">
+						  	<input class="form-control input-md" type="date" name="fechaEntrada" step="1" min="01/01/2015"  value="<? date_default_timezone_set('America/Caracas'); echo date("d/m/Y");?>">
 						  </div>
 						</div>
 					</div>

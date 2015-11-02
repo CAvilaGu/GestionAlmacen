@@ -99,7 +99,7 @@
 						
 					</div>
 				</fieldset>
-				<a type="submit" class="btn btn-success col-md-1 col-md-offset-4" style="margin-right: 10px;" href="ListClientesController">  Atras  </a>
+				<a type="submit" class="btn btn-success col-md-1 col-md-offset-4" style="margin-right: 10px;" href="../ListClientesController">  Atras  </a>
 				<button id="guardar" type="submit" class="btn btn-success col-md-1" style="margin-right: 10px;">Guardar</button>
 				<button type="submit" class="btn btn-success col-md-1" style="margin-right: 10px;">Eliminar</button>		
 			</div>
@@ -117,7 +117,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Desea eliminar el numero de telefono?</h4>
+        <h4 class="modal-title">Desea eliminar el número de teléfono?</h4>
       </div>
 
       <div class="modal-footer">

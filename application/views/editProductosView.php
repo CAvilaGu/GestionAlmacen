@@ -104,7 +104,7 @@
 						</div>
 					</div>
 				</fieldset>
-				<a type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;" href="ListProductosController">Atras</a>
+				<a type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;" href="../ListProductosController">Atras</a>
 				<button type="submit" class="btn btn-success col-md-1" style="margin-right: 10px;">Guardar</button>
 				<button type="submit" class="btn btn-success col-md-1" style="margin-right: 10px;">Eliminar</button>			
 			</form>

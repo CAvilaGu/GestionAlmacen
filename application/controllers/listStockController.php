@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ListClientesController extends CI_Controller {
+class ListStockController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,19 +24,17 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-$this->load->model('listClientesModel', '', TRUE);
+$this->load->model('listStockModel', '', TRUE);
 }
 
 	public function index()
 	{
 		// Base de Datos
-		$datos['clientes'] = $this->listClientesModel->obtenerClientes();
-		// $dato['detalleCliente'] = $this->listClientesModel->obtenerCliente();
+		$datos['stocks'] = $this->listStockModel->obtenerStock();
 
-		// $this->load->view('loginView');
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('listClientesView',$datos);
+		$this->load->view('listStockView', $datos);
 		$this->load->view('template/footer');
 	}
 }
