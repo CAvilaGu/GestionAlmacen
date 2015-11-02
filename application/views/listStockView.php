@@ -3,14 +3,14 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12 radio">
-                <h1>Listado de Despacho para el área de Producción</h1>   
+                <h1>Lista de Entradas a Almacén</h1>   
             </div>
         </div> 
         <div class="row">
             <div class="col-md-12"> <!-- Area de trabajo central -->
                 <div class="panel panel-default"> <!-- Titulo de la tabla -->
                     <div class="panel-heading"> 
-                        <a href="AddGalponesController" class="btn btn-success col-md-offset-10">
+                        <a href="AddStockController" class="btn btn-success col-md-offset-10">
                             <i class="fa fa-plus"></i>Agregar
                         </a> 
                     </div>
@@ -32,28 +32,27 @@
                                 <table id="dataTables-example" class="table table-striped table-hover dataTable no-footer" aria-describedby="dataTables-example_info"> <!-- table-bordered para hacer los bordes visibles -->
                                     <thead>
                                         <tr role="row">
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Rendering engine: activate to sort column ascending">ID</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="ascending" aria-label="Browser: activate to sort column ascending">Descripción</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Platform(s): activate to sort column ascending">Ubicación</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Engine version: activate to sort column ascending">Ancho</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="CSS grade: activate to sort column ascending">Largo</th>
-                                            <th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="CSS grade: activate to sort column ascending">Alto</th>
-
+                                            <th style="text-align: center" class="sorting_desc" tabindex="1" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="descending" >ID</th>
+                                            <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  >Lote</th>
+                                            <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Fecha de Entrada</th>
+                                            <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Supervisor</th>
+                                            <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Nro. Bultos</th>
+                                            <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Estado</th>
                                             <th style="width: 92px;"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     <?
-                                    if (!empty($galpones)) {
-                                            foreach ($galpones->result() as $galpon) {
+                                    if (!empty($stocks)) {
+                                            foreach ($stocks->result() as $stock) {
                                     ?>
                                         <tr class="gradeA odd">
-                                            <td class="sorting_1"> <?=$galpon->idAlmacen; ?></td>
-                                            <td class="center"> <?=$galpon->descripcion; ?></td>
-                                            <td class="center"> <?=$galpon->ubicacion; ?></td>
-                                            <td class="center"> <?=$galpon->ancho; ?></td>
-                                            <td class="center"> <?=$galpon->largo; ?></td>
-                                            <td class="center"> <?=$galpon->altura; ?></td>
+                                            <td style="text-align: center" class="sorting_1"> <?=$stock->idLote; ?></td>
+                                            <td style="text-align: center" class="center"> <?=$stock->tipoLote; ?></td>
+                                            <td style="text-align: center" class="center"> <?=$stock->fechaEntrada; ?></td>
+                                            <td style="text-align: center" class="center"> <?=$stock->nombre;?>&nbsp;<?=$stock->apellido;?></td>
+                                            <td style="text-align: center" class="center"> <?=$stock->nroBultos; ?></td>
+                                            <td style="text-align: center" class="center"> <?=$stock->estadoLote; ?></td>
                                             <td style="text-align: center" class="center">
                                                 <div class="btn-group"> <!-- Botones de edicion x registro -->
                                                     <a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;

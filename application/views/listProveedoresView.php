@@ -32,12 +32,12 @@
 								<table id="dataTables-example" class="table table-striped table-hover dataTable no-footer" aria-describedby="dataTables-example_info"> <!-- table-bordered para hacer los bordes visibles -->
 									<thead>
 										<tr role="row">
-											<th class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending">ID</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Nombre Comercial</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Nombre Fiscal</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Dirección</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Telefono</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Correo</th>
+											<th style="text-align: center" class="sorting_asc" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column ascending">ID</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Nombre Comercial</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Nombre Fiscal</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Dirección</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Telefono</th>
+											<th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending">Correo</th>
 											<th style="width: 92px;"></th>
 										</tr>
 									</thead>
@@ -47,12 +47,12 @@
 					    					foreach ($proveedores->result() as $proveedor) {
 						    		?>
 										<tr class="gradeA odd">
-											<td class="sorting_1"> <?=$proveedor->idProveedor; ?> </td>
-											<td class="center "> <?=$proveedor->nombreComercial; ?></td>
-											<td class="center "> <?=$proveedor->nombreFiscal; ?></td>
-											<td class="center "> <?=$proveedor->direccion; ?></td>
-											<td class="center "> <?=$proveedor->nroTelefonoProveedor; ?></td></td>
-											<td class="center "> <?=$proveedor->dirCorreoProveedor; ?></td></td>
+											<td style="text-align: center" class="sorting_1"> <?=$proveedor->idProveedor; ?> </td>
+											<td style="text-align: center" class="center "> <?=$proveedor->nombreComercial; ?></td>
+											<td style="text-align: center" class="center "> <?=$proveedor->nombreFiscal; ?></td>
+											<td style="text-align: center" class="center "> <?=$proveedor->direccion; ?></td>
+											<td style="text-align: center" class="center "> <?=$proveedor->nroTelefonoProveedor; ?></td></td>
+											<td style="text-align: center" class="center "> <?=$proveedor->dirCorreoProveedor; ?></td></td>
 											<td style="text-align: center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
 													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;

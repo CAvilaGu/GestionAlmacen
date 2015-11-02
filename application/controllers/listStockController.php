@@ -24,17 +24,17 @@ parent::__construct();
 $this->load->library(array('session'));
 $this->load->helper('form');
 $this->load->helper('url');
-// $this->load->model('listGalponesModel', '', TRUE);
+$this->load->model('listStockModel', '', TRUE);
 }
 
 	public function index()
 	{
 		// Base de Datos
-		// $datos['clientes'] = $this->listClientesModel->obtenerClientes();
+		$datos['stocks'] = $this->listStockModel->obtenerStock();
 
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('listStockView');
+		$this->load->view('listStockView', $datos);
 		$this->load->view('template/footer');
 	}
 }
