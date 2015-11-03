@@ -62,7 +62,7 @@
 							</div>
 							<div class="col-md-2">
 								<label>Unidad</label>
-								<select id="unidad" disabled class="form-control" style="text-align: center; font-size: medium;">
+								<select id="unidad"  class="form-control" style="text-align: center; font-size: medium;" disabled>
 									<option value="mm">mm</option>
 									<option value="cm">cm</option>
 									<option value="m" selected>metro</option>
