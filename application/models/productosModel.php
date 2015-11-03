@@ -141,7 +141,28 @@
 			 	$this->producto=$this->producto[0];
 			 	$this->cantidad=$this->cantidad[0];
 			 }
-				echo $this->cantidad;
+		 	$this->tipo_producto=$this->tipo_producto($this->tipo_producto);
+			$sql="call agregarProductoCompuesto('$this->codigo', 
+					'$this->descripcion', 
+					'$this->tipo',
+					'$this->alto',
+					'$this->ancho', 
+					'$this->largo',
+					'$this->calidad',
+					'$this->unidad',
+					'$this->optimo',
+					'$this->tipo_producto',
+					'$this->producto',
+					'$this->cantidad',
+					'$iproducto'
+					)";
+			$query= $this->db->query($sql);
+			if($query->row()->result=='ERROR'){
+				echo 1;
+			}else{
+				echo 0;
+			}
+			
 
 			 
 
@@ -166,5 +187,24 @@
 			}
 			echo json_encode($productos);
 		}
+
+		public function Eliminar(){
+			if(!isset($_POST['codigo'])){
+			echo "ERROR ";
+			echo 1;
+		}else{
+			$codigo=$_POST['codigo'];
+			$sql="call eliminarProducto('$codigo')";
+			$query= $this->db->query($sql);
+			if($query!='ERROR'){
+				echo 0;
+			}
+				echo(1);
+			}
+			
+		}
+
+
+
 	}
 ?>

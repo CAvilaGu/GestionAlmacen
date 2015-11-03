@@ -52,4 +52,7 @@ parent::__construct();
 		   print_r($row);
 		}
 	}
+	public function eliminar(){
+		$this->productosModel->Eliminar();
+	}
 }

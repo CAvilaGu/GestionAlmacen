@@ -129,13 +129,12 @@ function cambio(origen){
 				cantidad:cantidadC,
 				})
 				.done(function(data){
-					alert(data)
-					// if(data==0){
-					// 	alert('Producto guardado correctamente');
-					// 	window.location.reload();
-					// }					
-					// else
-					// 	alert('Error el producto agregado ya existe');
+					if(data==0){
+						alert('Producto guardado correctamente');
+						window.location.reload();
+					}					
+					else
+						alert('Error el producto agregado ya existe');
 				});	
 
 			}
@@ -171,4 +170,17 @@ function llenarSelect(a){
 					list=list.slice();
 					$("#productoC"+a).append('<option value="'+list[i]['idProducto']+'">'+list[i]['descripcion']+'</option>');
 				} 
+}
+function eliminar(a){
+	$.post("productosController/eliminar",{codigo:a})
+		.done(function(msg){
+			if (msg==0) {
+				alert('produco eliminaddo correctamente')
+			    window.location.reload();
+			}
+			else{
+				window.location.reload();
+			}
+				
+		});
 }
