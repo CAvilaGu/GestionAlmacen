@@ -16,14 +16,14 @@
 						<div class="form-group ">
 						  <label class="col-md-2 control-label" for="proveedor">Ubicación</label>
 						  <div class="col-md-8">
-					  			<input id="nroguia" name="nroguia" placeholder="Ubicación Física" class="form-control input-md" type="text">
+					  			<input id="ubicacion" name="nroguia" placeholder="Ubicación Física" class="form-control input-md" type="text">
 						  </div>
 						</div>
 						<!-- Select Basic -->
 						<div class="form-group">
 						  <label class="col-md-2 control-label" for="tipoLote">Descripción</label>
 						  <div class="col-md-8">
-					 	 		<input id="nroguia" name="nroguia" placeholder="Descripción del Galpón" class="form-control input-md" type="text">
+					 	 		<input id="descripcion" name="nroguia" placeholder="Descripción del Galpón" class="form-control input-md" type="text">
 						  </div>
 						</div>
 						<div class="form-group">
@@ -34,7 +34,7 @@
 							</div>
 							<div class="col-md-2">
 								<label>Alto</label>
-								<input  class="form-control" />
+								<input id="altoGalpon" class="form-control" />
 							</div>
 							<div class="col-md-2">
 								<label>Largo</label>
@@ -42,10 +42,10 @@
 							</div>
 							<div class="col-md-2">
 								<label>Unidad</label>
-								<select class="form-control">
-									<option value="m">m</option>
-									<option value="cm">cm</option>
+								<select id="unidad" disabled class="form-control" style="text-align: center; font-size: medium;">
 									<option value="mm">mm</option>
+									<option value="cm">cm</option>
+									<option value="m" selected>metro</option>
 								</select> 
 							</div>
 						</div>	
@@ -57,7 +57,7 @@
 							</div>
 							<div class="col-md-2">
 								<label>Alto</label>
-								<input  class="form-control" />
+								<input  id="altoCoor" class="form-control" />
 							</div>
 							<div class="col-md-2">
 								<label>Largo</label>
@@ -65,10 +65,10 @@
 							</div>
 							<div class="col-md-2">
 								<label>Unidad</label>
-								<select class="form-control">
-									<option value="m">m</option>
-									<option value="cm">cm</option>
+								<select id="unidad" disabled class="form-control" style="text-align: center; font-size: medium;">
 									<option value="mm">mm</option>
+									<option value="cm">cm</option>
+									<option value="m" selected>metro</option>
 								</select> 
 							</div>
 						</div>	
@@ -94,8 +94,7 @@
 				</div>
 				<a type="submit" class="btn btn-success col-md-1 col-md-offset-4" style="margin-right: 10px;" href="ListGalponesController">  Atras  </a>
 				<button id="guardar"type="submit" class="btn btn-success col-md-1">Guardar</button>
-			</form>
   		</div>
 	</div>
 </div>
-<script src="assets/js/galpon.js"></script>
+<script src="assets/js/galpones.js"></script>

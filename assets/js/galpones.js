@@ -1,11 +1,16 @@
 var transito=[];
 var vacio=[];
-var anchoGalpon,largoGalpon,largoCoor,anchoCoor;
+var anchoGalpon,largoGalpon,largoCoor,anchoCoor,ubicacion,descripcion,altoGalpon,altoCoor,unidad;
 $("#procesar").click(function(){
 	anchoGalpon=parseInt($('#anchoGalpon').val());
 	largoGalpon=parseInt($('#largoGalpon').val());
 	largoCoor=parseInt($('#largoCoor').val());
 	anchoCoor=parseInt($('#anchoCoor').val());
+	ubicacion=($('#ubicacion').val());
+	descripcion=($('#descripcion').val());
+	altoGalpon=parseInt($('#altoGalpon').val());
+	altoCoor=parseInt($('#altoCoor').val());
+	unidad=($('#unidad').val());
 	dimAncho=Math.floor(anchoGalpon/anchoCoor);
 	dimLargo=Math.floor(largoGalpon/largoCoor);
 	$("#galpon").html('');
@@ -33,5 +38,19 @@ function pendiente(){
 	})
 }
 $("#guardar").click(function(){
-	alert(vacio);
+	$.ajax({
+				type: "POST",
+			   data: {anchoGalpon:anchoGalpon,largoGalpon:largoGalpon,largoCoor:largoCoor,anchoCoor:anchoCoor,ubicacion:ubicacion,descripcion:descripcion,altoGalpon:altoGalpon,altoCoor:altoCoor,unidad:unidad,transito:transito,vacio:vacio},
+			   url: "galponesController/insertar",
+			   success: function(msg){
+			     	if(msg==0){
+			     		alert('Galpon insertado correctamente')
+			     		 window.location.reload();
+			     	}
+			     	else{
+			     		alert('Ocurrió un error y no se pudo insertar el galpon')
+			     	}
+			   }
+	});
 })
+
