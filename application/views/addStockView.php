@@ -63,6 +63,7 @@
 
 				<div>
 					<form class="form-horizontal">
+						<!--OPCION TIPO DE LOTE SEA IGUAL MATERIA PRIMA -->
 						<fieldset>
 						<!-- Form Name -->
 						<legend>Materia Prima</legend>
@@ -85,6 +86,7 @@
 				</div>
 				<div>
 					<form class="form-horizontal">
+						<!--OPCION TIPO DE LOTE SEA IGUAL CONSUMIBLE -->
 						<fieldset>
 							<!-- Form Name -->
 							<legend>Consumible</legend>
@@ -109,7 +111,7 @@
 				<div>
 					<form class="form-horizontal">
 					<fieldset>
-
+					<!--OPCION TIPO DE LOTE SEA IGUAL PRODUCTO TERMINADO-->
 					<!-- Form Name -->
 					<legend>Producto Terminado</legend>
 
@@ -132,16 +134,16 @@
 				</div>
 				<div>
 					<form class="form-horizontal">
+						<!--OPCION TIPO DE LOTE SEA IGUAL MATERIAL RECUPERADO -->
 						<fieldset>
 							<!-- Form Name -->
 							<legend>Material Recuperado</legend>
 
 							<!-- Text input-->
-							<div class="form-group">
+							<div class="form-group" style="margin-top=0px;">
 							  <label class="col-md-4 control-label" for="nroguia">Proceso Productivo</label>  
 							  <div class="col-md-4">
 							  	<input id="nroguia" name="nroguia" placeholder="Nombre Proceso" class="form-control input-md" type="text">
-							    
 							  </div>
 							</div>
 						</fieldset>
@@ -153,6 +155,10 @@
 					<fieldset>
 							<!-- Form Name -->
 							<legend style="text-align:center; text-color: black;"><h2>Detalle de Paquete</h2></legend>
+							<div class="row col-md-1 col-md-offset-10" style="margin-left:88%">
+                   				 <a href="#" class="btn btn-success btn-xs"><i class="fa fa-plus"></i>Agregar</a>
+							</div>
+							<br>
 							<div class="form-group">
 								<label class="col-md-3 control-label" for="nroguia">Material</label> 
 								<label class="col-md-3 control-label" for="nroguia">Cant. Piezas</label>  
@@ -198,7 +204,6 @@
 								</select> 
 							</div>
 							<div class="col-md-1" style="width:8em; padding:auto;">
-					  			<a id=""><img src="assets/images/text-plus-icon.png"></a>&nbsp;
 					  			<a id=""><img src="assets/images/text-menos-icon.png"></a>
 							</div>	
 					</fieldset>
