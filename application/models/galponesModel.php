@@ -91,7 +91,7 @@
 			 }
 
 
-	 		$sql="call agregarGalpon('$this->ubicacion',
+	 		echo $sql="call agregarGalpon('$this->ubicacion',
 				'$this->descripcion',
 				'$this->altoGalpon',
 				'$this->anchoGalpon',

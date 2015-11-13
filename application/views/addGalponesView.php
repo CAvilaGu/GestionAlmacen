@@ -73,8 +73,8 @@
 							</div>
 						</div>	
 					</div>
-					<button type="submit" class="btn btn-success col-md-1 col-md-offset-5" style="margin-right: 10px;">  Limpiar  </button>
-					<button id="procesar" type="submit" class="btn btn-success col-md-1">Procesar</button>
+					<button type="submit" class="btn btn-success col-md-2 col-md-offset-4" style="margin-right: 10px;">  Limpiar  </button>
+					<button id="procesar" type="submit" class="btn btn-success col-md-2">Procesar</button>
 
 				</fieldset>
 			</div>
@@ -86,14 +86,16 @@
 						<legend>Distribución del Galpón</legend>
 
 						<!-- Text input-->
-						<div id="galpon">
+						<div class="row">
+							<div id="galpon" class="col-md-offset-2" >
+							</div>
 						</div>
 						<br>
 						</fieldset>
 					</form>
 				</div>
-				<a type="submit" class="btn btn-success col-md-1 col-md-offset-4" style="margin-right: 10px;" href="ListGalponesController">  Atras  </a>
-				<button id="guardar"type="submit" class="btn btn-success col-md-1">Guardar</button>
+				<a type="submit" class="btn btn-success col-md-2 col-md-offset-4" style="margin-right: 10px; text-aling:center;" href="ListGalponesController">  Atras  </a>
+				<button id="guardar"type="submit" class="btn btn-success col-md-2" style="text-aling:center;">Guardar</button>
   		</div>
 	</div>
 </div>

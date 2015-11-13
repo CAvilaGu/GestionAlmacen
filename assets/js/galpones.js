@@ -14,7 +14,7 @@ $("#procesar").click(function(){
 	dimAncho=Math.floor(anchoGalpon/anchoCoor);
 	dimLargo=Math.floor(largoGalpon/largoCoor);
 	$("#galpon").html('');
-	$("#galpon").append('<table id="tabla" width="500" height="300" border="1"></table>')
+	$("#galpon").append('<table id="tabla" max-width="500" max-height="300" border="1"></table>')
 	for(i=0;i<dimLargo;i++){
 		$("#tabla").append("<tr id='columna"+i+"'></tr>");
 		for(j=0;j<dimAncho;j++){
@@ -43,6 +43,7 @@ $("#guardar").click(function(){
 			   data: {anchoGalpon:anchoGalpon,largoGalpon:largoGalpon,largoCoor:largoCoor,anchoCoor:anchoCoor,ubicacion:ubicacion,descripcion:descripcion,altoGalpon:altoGalpon,altoCoor:altoCoor,unidad:unidad,transito:transito,vacio:vacio},
 			   url: "galponesController/insertar",
 			   success: function(msg){
+			   
 			     	if(msg==0){
 			     		alert('Galpon insertado correctamente')
 			     		 window.location.reload();
