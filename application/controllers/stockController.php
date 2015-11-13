@@ -18,11 +18,7 @@ parent::__construct();
 
 	public function index()
 	{
-		if(!$this->session->userdata('user')){
-			echo "error con la sesion";
-		}else{
-			echo $this->session->userdata('user');
-		}
+		$this->stockModel->mostrar();
 	}
 	public function insertar(){
 		$this->stockModel->insertar();
