@@ -76,5 +76,15 @@
 			$query= $this->db->query($sql);
 				return $query; 
 		}
+
+		public function listar(){
+			$proveedores=array();
+			$sql='SELECT idProveedor,nombreComercial FROM tbl_sga_proveedor';
+			$query= $this->db->query($sql);
+			foreach ($query->result_array() as $proveedor) {
+				$proveedores[]=($proveedor);
+			}
+			echo json_encode($proveedores);
+		}
 	}
 ?>

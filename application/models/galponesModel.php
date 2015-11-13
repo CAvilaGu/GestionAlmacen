@@ -135,5 +135,14 @@
 			$query= $this->db->query($sql);
 				return $query; 
 		}
+		public function listar(){
+			$galpones=array();
+			$sql='SELECT idAlmacen,descripcion FROM tbl_sga_almacen';
+			$query= $this->db->query($sql);
+			foreach ($query->result_array() as $galpon) {
+				$galpones[]=($galpon);
+			}
+			echo json_encode($galpones);
+		}
 	}
 ?>

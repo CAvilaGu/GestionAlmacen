@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class galponesController extends CI_Controller {
+class StockController extends CI_Controller {
 
 	// 1 - insertar
 	// 2 - Eliminar
@@ -13,32 +13,24 @@ parent::__construct();
  $this->load->library(array('session'));
 // $this->load->helper('form');
 // $this->load->helper('url');
- $this->load->model('galponesModel', '', TRUE);
+ $this->load->model('stockModel', '', TRUE);
 }
 
 	public function index()
 	{
-		
-		
+		if(!$this->session->userdata('user')){
+			echo "error con la sesion";
+		}else{
+			echo $this->session->userdata('user');
+		}
 	}
 	public function insertar(){
-		$this->galponesModel->insertar();
+		$this->stockModel->insertar();
 	}
 	public function Eliminar(){
-		if(!isset($_POST['rif'])){
-			echo "ERROR ";
-			return 1;
-		}else{
-			$rif=$_POST['rif'];
-			if($this->galponesModel->eliminar_proveedor($rif)!='ERROR'){
-				echo 0;
-			}
-		}
 		
 	}
 	public function listar(){
-		$this->galponesModel->listar();
+		$this->stockModel->listar();
 	}
-
-
 }

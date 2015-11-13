@@ -40,7 +40,9 @@ parent::__construct();
 			if($this->proveedoresModel->eliminar_proveedor($rif)!='ERROR'){
 				echo 0;
 			}
-		}
-		
+		}	
+	}
+	public function listar(){
+		$this->proveedoresModel->listar();
 	}
 }
