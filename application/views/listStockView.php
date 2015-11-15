@@ -32,13 +32,13 @@
                                 <table id="dataTables-example" class="table table-striped table-hover dataTable no-footer" aria-describedby="dataTables-example_info"> <!-- table-bordered para hacer los bordes visibles -->
                                     <thead>
                                         <tr role="row">
-                                            <th style="text-align: center" class="sorting_desc" tabindex="1" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="descending" >ID</th>
+                                            <th style="text-align: center width: 60px;" class="sorting_desc" tabindex="1" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="descending" >ID</th>
                                             <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  >Lote</th>
                                             <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Fecha de Entrada</th>
                                             <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Supervisor</th>
                                             <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Nro. Bultos</th>
                                             <th style="text-align: center" class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1" >Estado</th>
-                                            <th style="width: 92px;"></th>
+                                            <th style="width: 100px;"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -55,7 +55,8 @@
                                             <td style="text-align: center" class="center"> <?=$stock->estadoLote; ?></td>
                                             <td style="text-align: center" class="center">
                                                 <div class="btn-group"> <!-- Botones de edicion x registro -->
-                                                    <a href="stockController?lote=<? echo $stock->idLote ?>"><i class="fa fa fa-eye fa-lg"></i></a>&nbsp;&nbsp;
+                                                    <a href="stockController?lote=<? echo $stock->idLote ?>"><i class="fa fa-file-pdf-o"></i></a>&nbsp;&nbsp;
+                                                    <a href="#"><i class="fa fa-info-circle fa-lg" ></i></a>
                                                     <a href="EditGalponesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;|
                                                     <a href="#" style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
                                                 </div>

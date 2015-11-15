@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ListDespachoClienteController extends CI_Controller {
+class ListOrdenDespachoController extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -34,7 +34,7 @@ $this->load->helper('url');
 
 		$this->load->view('template/header');
 		$this->load->view('template/menu');
-		$this->load->view('listDespachoClienteView');
+		$this->load->view('listOrdenDespachoView');
 		$this->load->view('template/footer');
 	}
 }

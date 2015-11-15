@@ -53,7 +53,7 @@
 											<td style="text-align: center" class="center"> <?=$cliente->dirCorreoCliente; ?></td>
 											<td style="text-align: center" class="center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
-													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal<?=$cliente->idCliente; ?>"></i></a>&nbsp;&nbsp;
+													<a href="#"><i class="fa fa-info-circle fa-lg" data-toggle="modal" data-target="#myModal<?=$cliente->idCliente; ?>"></i></a>&nbsp;&nbsp;
   													<a href= <?='"EditClientesController/'.$cliente->idCliente.'"'?>><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;&nbsp;|
   													<a href= <?='"EliminarClientesController/cliente/'.$cliente->idCliente.'"'?>style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>

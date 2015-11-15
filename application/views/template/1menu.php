@@ -9,16 +9,9 @@
                         <a  href="ListProveedoresController"><i class="fa fa-industry fa-3x text-justify"></i> Proveedores</a>
                     </li>
                     <li class="text-center"><h5><strong>VENTAS</strong></h5></li>
-                    <li>
-                        <a href="#"><i class="fa fa-exchange fa-3x text-justify"></i>Despacho<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a  href="tab-panel.html"><i class="fa fa-user text-justify"></i> Despacho Cliente</a>
-                            </li>
-                            <li>
-                                <a   href="chart.html"><i class="fa fa-industry text-justify"></i> Despacho Producción</a>
-                            </li>  
-                        </ul>
+                    <<li>
+                        <a href="listOrdenDespachoController"><i class="fa fa-exchange fa-3x text-justify"></i>Despacho<span></span></a>
+               
                     </li>  
                     <li>
                         <a  href="ListClientesController"><i class="fa fa-users fa-3x text-justify"></i> Clientes</a>

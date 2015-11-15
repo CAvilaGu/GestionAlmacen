@@ -15,6 +15,9 @@
     <!-- CUSTOM STYLES-->
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
 
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" type="text/css" href="assets/css/styleSheet.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">

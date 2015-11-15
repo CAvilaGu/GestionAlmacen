@@ -33,11 +33,11 @@ class PDF extends FPDF
 				    $this->Ln(20);
 	}
 
-	function Fecha($fecha,$bulto,$tipo,$descripcion,$meidas){
+	function Fecha($fecha,$bulto,$lote,$tipo,$descripcion,$meidas){
 		$this->SetFont('Arial','B',35);
 		$this->Cell(0,0,"$fecha",100,0,'R');
 		$this->ln(25);
-		$this->Cell(0,0,"$bulto",100,0,'R');
+		$this->Cell(0,0,"$lote-$bulto",100,0,'R');
 		$this->ln(25);
 		$this->SetFont('Arial','B',15);
 		$this->Cell(0,0,"$tipo",100,0,'L');
@@ -90,7 +90,7 @@ class PDF extends FPDF
 					$fecha= date_format($fecha, 'd-m-Y');
 
 					$pdf->AddPage();
-					$pdf->Fecha("$fecha","$row->idBulto","$row->tipoLote","$row->descripcion","$row->dimAncho x $row->dimAlto x $row->dimLargo");
+					$pdf->Fecha("$fecha","$row->idBulto","$row->idLote","$row->tipoLote","$row->descripcion","$row->dimAncho x $row->dimAlto x $row->dimLargo");
 				 
 				}
 				// $pdf = new PDF();

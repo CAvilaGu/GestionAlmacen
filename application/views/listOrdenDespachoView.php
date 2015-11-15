@@ -1,16 +1,16 @@
-<!-- Lista de Despacho para el area de Produccion -->
+<!-- Lista de Despachos a Clientes -->
 <div id="page-wrapper" >
 	<div id="page-inner">
 		<div class="row">
 			<div class="col-md-12 radio">
-				<h1>Listado de Despacho para el área de Producción</h1>   
+				<h1>Listado de Despachos</h1>   
 			</div>
 		</div> 
 		<div class="row">
 			<div class="col-md-12"> <!-- Area de trabajo central -->
 				<div class="panel panel-default"> <!-- Titulo de la tabla -->
 					<div class="panel-heading"> 
-						<a href="AddGalponesController" class="btn btn-success col-md-offset-10">
+						<a href="AddOrdenDespachoController" class="btn btn-success col-md-offset-10">
 							<i class="fa fa-plus"></i>Agregar
 						</a> 
 					</div>
@@ -33,12 +33,9 @@
 									<thead>
 										<tr role="row">
 											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Rendering engine: activate to sort column ascending">ID</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="ascending" aria-label="Browser: activate to sort column ascending">Descripción</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Platform(s): activate to sort column ascending">Ubicación</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Engine version: activate to sort column ascending">Ancho</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="CSS grade: activate to sort column ascending">Largo</th>
-											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="CSS grade: activate to sort column ascending">Alto</th>
-
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-sort="ascending" aria-label="Browser: activate to sort column ascending">Tipo Despacho</th>
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Platform(s): activate to sort column ascending">Fecha</th>
+											<th class="sorting" tabindex="0" aria-controls="dataTables-example" rowspan="1" colspan="1"  aria-label="Engine version: activate to sort column ascending">Estado</th>
 											<th style="width: 92px;"></th>
 										</tr>
 									</thead>
@@ -52,11 +49,9 @@
 											<td class="center"> <?=$galpon->descripcion; ?></td>
 											<td class="center"> <?=$galpon->ubicacion; ?></td>
 											<td class="center"> <?=$galpon->ancho; ?></td>
-											<td class="center"> <?=$galpon->largo; ?></td>
-											<td class="center"> <?=$galpon->altura; ?></td>
 											<td style="text-align: center" class="center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
-													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
+													<a href="#"><i class="fa fa-info-circle fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
   													<a href="EditGalponesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;|
   													<a href="#" style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>

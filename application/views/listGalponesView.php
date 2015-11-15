@@ -56,7 +56,7 @@
 											<td class="center"> <?=$galpon->altura; ?></td>
 											<td style="text-align: center" class="center">
 												<div class="btn-group"> <!-- Botones de edicion x registro -->
-													<a href="#"><i class="fa fa fa-eye fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
+													<a href="#"><i class="fa fa-info-circle fa-lg" data-toggle="modal" data-target="#myModal"></i></a>&nbsp;&nbsp;
   													<a href="EditGalponesController"><i class="fa fa-pencil fa-lg"></i></a> &nbsp;&nbsp;|
   													<a href="#" style="color:red;"><i class="fa fa-trash-o fa-lg"></i></a>
 												</div>
